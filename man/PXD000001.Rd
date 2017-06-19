@@ -55,11 +55,11 @@ library("rpx")
 px <- PXDataset("PXD000001")
 pxfiles(px)
 
-## Get all the data into working dir
-px1get("all")
-dir()
 
-## Data download script
-(f <- system.file("scripts/getPXD000001.R", package = "PXD000001"))
-writeLines(readLines(f))
+\dontrun{
+  ## Get one files
+  px1get("erwinia_carotovora.fasta")
+  ## Get all the data into working dir
+  px1get("all")
+}
 }
