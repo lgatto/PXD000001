@@ -9,15 +9,12 @@ dependencies from the Bioconductor repository:
 
 ```{r}
 source("http://bioconductor.org/biocLite.R")
-biocLite(c("mzR", "MSnbase"))
+biocLite(c("mzR", "MSnbase", "msdata"))
 ```
 
-and then use `devtools` to install the package directly from
-Bitbucket:
+Then, install the package directly from Github:
+
 
 ```{r}
-## if you are missing devtools
-install.packages("devtools")
-library("devtools")
-install_bitbucket("lgatto/PXD000001")
+biocLite("lgatto/PXD000001")
 ```

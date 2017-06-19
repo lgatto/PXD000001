@@ -1,0 +1,11 @@
+Package: PXD000001
+Title: Proteomics data set PXD000001
+Version: 0.3.0
+Author: Laurent Gatto
+Maintainer: Laurent Gatto <lg390@cam.ac.uk>
+Description: This package distributes the ProteomeXchange data set
+	     PXD000001 as a standalone package for offline usage.
+Depends: mzR, MSnbase
+Imports: msdata (>= 0.17.1)
+Suggests: rpx
+License: CC0
