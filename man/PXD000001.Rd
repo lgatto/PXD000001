@@ -4,13 +4,8 @@
 \alias{px1files}
 \alias{px1get}
 
-\title{
-  \packageTitle{PXD000001}
-}
+\title{ The \code{PXD000001} data set }
 
-\description{
-  \packageDescription{PXD000001}
-}
 
 \details{
 
