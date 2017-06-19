@@ -1,7 +1,9 @@
 Package: PXD000001
 Title: Proteomics data set PXD000001
 Version: 0.3.0
-Author: Laurent Gatto
+Authors@R: person("Laurent", "Gatto",
+                  email = "lg390@cam.ac.uk",
+	   	  role = c("aut", "cre"))
 Maintainer: Laurent Gatto <lg390@cam.ac.uk>
 Description: This package distributes the ProteomeXchange data set
 	     PXD000001 as a standalone package for offline usage.
