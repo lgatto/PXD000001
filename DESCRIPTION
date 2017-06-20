@@ -1,6 +1,6 @@
 Package: PXD000001
 Title: Proteomics data set PXD000001
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: person("Laurent", "Gatto",
                   email = "lg390@cam.ac.uk",
 	   	  role = c("aut", "cre"))

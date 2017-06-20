@@ -20,9 +20,15 @@ px1get <- function(f, ...) {
         fls <- px1files(full.names = TRUE)
         f <- fls[i]
     }
-    res <- file.copy(f, getwd(), ...)
-    message("Copied ", sum(res), " file(s).")
-    if (any(!res))
-        warning("Files that could not be copied: ",
-                paste(f[!res], collapse = ", "))
+    fex <- file.exists(basename(f))
+    if (any(fex))
+        message("Not overwriting exising files.")
+    f <- f[!fex]
+    if (length(f)) {
+        res <- file.copy(f, getwd(), overwrite = FALSE, ...)
+        message("Copied ", sum(res), " file(s).")
+        if (any(!res))
+            warning("Files that could not be copied: ",
+                    paste(f[!res], collapse = ", "))
+    }
 }
