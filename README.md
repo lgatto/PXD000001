@@ -8,13 +8,11 @@ To install `PXD000001`, you will need to first install its
 dependencies from the Bioconductor repository:
 
 ```{r}
-source("http://bioconductor.org/biocLite.R")
-biocLite(c("mzR", "MSnbase", "msdata"))
+BiocManager::install(c("mzR", "MSnbase", "msdata"))
 ```
 
 Then, install the package directly from Github:
 
-
 ```{r}
-biocLite("lgatto/PXD000001")
+BiocManager::install("lgatto/PXD000001")
 ```
